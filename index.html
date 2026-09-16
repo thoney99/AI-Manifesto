@@ -7,6 +7,7 @@
   :root {
     --bg: #ffffff;
     --fg: #0a0a0a;
+    --font-size: 22px;
   }
 
   * {
@@ -84,7 +85,7 @@
   }
 
   .text-block li {
-    font-size: clamp(16px, 2.1vw, 26px);
+    font-size: var(--font-size);
     line-height: 1.2;
     font-weight: 300;
     color: #999999;
@@ -96,12 +97,20 @@
     color: var(--fg);
   }
 
+  .text-block p {
+    font-size: var(--font-size);
+    line-height: 1.2;
+    font-weight: 300;
+    color: var(--fg);
+    cursor: default;
+  }
+
   .progress {
     position: fixed;
     bottom: 24px;
     right: 32px;
     color: var(--fg);
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 0.1em;
     z-index: 10;
     font-feature-settings: "case";
@@ -135,18 +144,26 @@
       <ul>
         <li>Relational aspects of design englobe features of the artefact that will be perceived by someone else and work as vectors for an idea.</li>
         <li>Technical aspects of design relate to infrastructure allowing for the artefact to perform its function.</li>
-        <li>All design tasks are situated somewhere on the technical-relational spectrum. Every designer will place things differently.</li>
-        <li>The relational aspect allows us to build culture together, as producers we enable the viewers. This aspect of the work should remain a collaboration between humans. It relies on our sensibility rather than on logic. Commonplace aesthetics and concepts do not help push culture forward.</li>
-        <li>Commonplace aesthetics and concepts do not help push culture forward.</li>
-        <li>We should be proficient in all aspects of technicality that are part of the cultural discourse. However, to bridge gaps in our skillset and allow us to transmit the original idea in the best way we imagined, AI can become a valuable tool.</li>
+        <li>All design tasks are situated somewhere on the technical-relational spectrum. Every designer will place them differently.</li>
+        <li>The relational aspect allows us to build culture together, as producers we enable the viewers. This aspect of the work should remain a collaboration between humans. It relies on our sensibility rather than on logic.</li>
+        <li>Commonplace aesthetics and concepts, which are the general AI outputs, do not help push culture forward. Have the courage and honesty to rebel out of the commonplace.</li>
+        <li>We should be proficient in all aspects of technicality that are part of the cultural discourse. However, to bridge gaps in our skillset and allow us to transmit the original idea in the best way we imagined, AI can become a valuable tool. It should not come at the cost of experimentation, creativity and critical discourse.</li>
+        <li>Learning a craft and perfecting it is a fulfilling task. It also allows us to acknowledge the cultural implications of the craft. Outsourcing it to an AI hides these opportunities, we should be mindful of this when using AI in technical aspects of design.</li>
+        <li>Enjoy craft. I like calculating baseline grids and doing all the CSS. Follow what you like.</li>
         <li>Exception always for any project having AI at the heart of its cultural discourse.</li>
       </ul>
     </div>
   </div>
 
+  <div class="slide text-slide">
+    <div class="text-block">
+      <p>Cultural discourse is a human task. Learning is good for you. Sometimes AI allows us to make that extra step technically or live up to a conceived standard of efficiency. It’s also destroying environment and communities.</p>
+    </div>
+  </div>
+
 </div>
 
-<div class="progress"><span id="current">1</span>/<span id="total">7</span></div>
+<div class="progress"><span id="current">1</span>/<span id="total">9</span></div>
 <!-- <div class="hint">↑ ↓ to navigate</div> -->
 
 <script>
